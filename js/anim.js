@@ -12,8 +12,9 @@ ScrollTrigger.create({
   gsap.set("#moon", { x: 0, xPercent: 0, y: 0, yPercent: 100,height:"5vh" })
   gsap.to('#moon', {
     scrollTrigger: {
-      start: 'top 75%',
-      end: 'bottom 25%',
+        //markers:true,
+        start: 'top 75%',
+        end: 'bottom 25%',
       toggleActions: 'restart complete reverse reset',
       trigger: '#hero',
       scrub: true
@@ -62,3 +63,34 @@ ScrollTrigger.create({
 
     height:"70vh"
   });
+
+/*
+// Configurer la position initiale de l'élément
+gsap.set("#title", { x: 0, xPercent: '0', y: 0, yPercent: 0 });
+
+// Créer l'animation de défilement
+gsap.to('#title', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+    toggleActions: 'restart complete reverse reset',
+    trigger: '#hero',
+    scrub: true
+  },
+  autoAlpha: 1,
+  y: 100,
+  ease: "power2.out"
+});*/
+gsap.fromTo('#title', 
+    { autoAlpha: 0, y: 50 }, // Début de l'animation
+    { autoAlpha: 1, y: -50,    // Fin de l'animation
+      scrollTrigger: {
+        trigger: '#hero',
+        start: '74% 75%',
+        end: 'bottom 25%',
+        scrub: true,
+        toggleActions: 'restart complete reverse reset'
+      },
+    }
+  );
