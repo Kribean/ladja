@@ -1,6 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
+window.addEventListener('load', function() {
+  gsap.to('#loader', {
+      duration: 1,
+      opacity: 0,
+      onComplete: function() {
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+      }
+  });
+});
 
 ScrollTrigger.create({
     trigger: "#hero",
@@ -94,3 +104,21 @@ gsap.fromTo('#title',
       },
     }
   );
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+        //markers: true,
+        start: 'top 75%',
+        end: 'bottom 25%',
+        toggleActions: 'restart complete reverse reset',
+        trigger: '#flute-man',
+    }
+});
+
+// Ajout des animations à la timeline
+tl.set("#flute-man-1", { x: '100%' })
+.set("#flute-man-2", { x: '100%' })
+.set("#flute-man-3", { x: '100%' })
+  .to('#flute-man-1', { x: '0%', duration: 2 })
+  .to('#flute-man-2', { x: '0%', duration: 2 })
+  .to('#flute-man-3', { x: '0%', duration: 2 });
