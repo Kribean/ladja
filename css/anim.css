@@ -1,0 +1,107 @@
+
+
+#wrapper {
+  width: 100vw;
+  height: fit-content;
+}
+
+
+.line {
+  fill: none;
+  transition-delay: 400ms, 0;
+  transition-property: stroke, stroke-dasharray, stroke-dashoffset;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.line.top {
+  stroke-dasharray: 40 139;
+}
+
+.line.bottom {
+  stroke-dasharray: 20 180;
+  stroke-dashoffset: -20px;
+}
+
+.navbar-toggle-custom.active {
+  transform: rotate(45deg);
+}
+
+.navbar-toggle-custom.active .line {
+  stroke: #FFFFFF;
+}
+
+.navbar-toggle-custom.active .line.top {
+  stroke-dashoffset: -98px;
+}
+
+.navbar-toggle-custom.active .line.bottom {
+  stroke-dashoffset: -138px;
+}
+
+.navbar-toggle-custom:not(.active):hover .line.bottom {
+  stroke-dasharray: 40 180;
+  stroke-dashoffset: 0px;
+}
+
+
+
+.navbar-custom ul {
+  width: 100%;
+  max-width: 400px;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.navbar-custom li {
+  opacity: 0;
+}
+
+.navbar-custom a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  text-align: left;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 500ms;
+  position: relative;
+}
+
+.navbar-custom a:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  opacity: 0;
+  transition: opacity ease 500ms;
+}
+
+.navbar-custom a:hover {
+  letter-spacing: 3px;
+}
+
+.navbar-custom a:hover:before {
+  opacity: .2;
+}
+
+#bg-circle {
+  transform: scale(0);
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  z-index: 1;
+}
