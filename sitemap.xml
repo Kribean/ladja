@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://jabari-kaa.com/</loc>
+    <lastmod>2025-02-07</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Page Auteur -->
+  <url>
+    <loc>https://jabari-kaa.com/auteur.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Page Contact -->
+  <url>
+    <loc>https://jabari-kaa.com/contact.html</loc>
+    <lastmod>2025-02-07</lastmod>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
