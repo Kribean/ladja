@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jabari-kaa.com/sitemap.xml

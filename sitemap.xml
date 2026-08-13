@@ -3,22 +3,36 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://jabari-kaa.com/</loc>
-    <lastmod>2025-02-07</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <priority>1.00</priority>
   </url>
 
   <!-- Page Auteur -->
   <url>
     <loc>https://jabari-kaa.com/auteur.html</loc>
-    <lastmod>2025-02-07</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <priority>0.80</priority>
   </url>
 
   <!-- Page Contact -->
   <url>
     <loc>https://jabari-kaa.com/contact.html</loc>
-    <lastmod>2025-02-07</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <priority>0.60</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://jabari-kaa.com/blog/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Article : univers de Jabari Kaa -->
+  <url>
+    <loc>https://jabari-kaa.com/blog/legendes-mysteres-ile-de-motoa.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.70</priority>
   </url>
 
 </urlset>

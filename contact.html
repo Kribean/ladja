@@ -3,58 +3,145 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Contactez B. Ichikawa, l'auteur de Jabari, via Instagram pour toute question ou commentaire. Rejoignez l'univers de Jabari et partagez votre expérience." />
-    <meta name="keywords" content="contact, auteur, B. Ichikawa, Jabari, Instagram, écrivain, questions, commentaires, manga" />
+    <meta name="description" content="Contactez B. Ichikawa, l'auteur de Jabari Kaa, via Instagram pour toute question ou commentaire, et suivez l'actualité du tome 2 à venir." />
+    <meta name="keywords" content="contact, auteur, B. Ichikawa, Jabari Kaa, Instagram, écrivain, questions, commentaires" />
+    <link rel="canonical" href="https://jabari-kaa.com/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:title" content="Contactez l'Auteur - B. Ichikawa" />
-    <meta property="og:description" content="Contactez B. Ichikawa, l'auteur de Jabari, via Instagram pour poser des questions, discuter du roman ou partager vos commentaires." />
-    <meta property="og:image" content="https://jabari-kaa.com/images/auteur-image.jpg" />
+    <meta property="og:description" content="Contactez B. Ichikawa, l'auteur de Jabari Kaa, via Instagram pour poser des questions, discuter du roman ou partager vos commentaires." />
+    <meta property="og:image" content="https://jabari-kaa.com/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://jabari-kaa.com/contact.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contactez l'Auteur - B. Ichikawa" />
+    <meta name="twitter:description" content="Contactez B. Ichikawa, l'auteur de Jabari Kaa, via Instagram." />
+    <meta name="twitter:image" content="https://jabari-kaa.com/images/og-image.jpg" />
+    <meta name="theme-color" content="#0b0f1f" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <title>Contact - B. Ichikawa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/anim.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://jabari-kaa.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://jabari-kaa.com/contact.html" }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body class="relative font-league-spartan">
-    <!-- Navbar -->
-    <nav class="bg-gray-900 text-white py-4">
-      <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="./" class="text-xl font-bold">Jabari</a>
-        <ul class="flex space-x-8">
-          <li><a href="./" class="text-xl hover:text-red-300">Accueil</a></li>
-          <li><a href="./contact.html" class="text-lg hover:text-red-300">Contact</a></li>
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="./index.html" class="text-xl font-bold">Jabari Kaa</a>
+        <ul class="hidden lg:flex items-center space-x-8">
+          <li><a href="./index.html" class="text-lg hover:text-red-300">Accueil</a></li>
+          <li><a href="./blog/index.html" class="text-lg hover:text-red-300">Blog</a></li>
           <li><a href="./auteur.html" class="text-lg hover:text-red-300">Auteur</a></li>
+          <li><a href="./contact.html" class="text-lg hover:text-red-300">Contact</a></li>
+          <li>
+            <a
+              href="https://www.amazon.fr/Jabari-Kaa-B-Ichikawa/dp/B0DVZ9MT1N/ref=tmm_pap_swatch_0"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-sm btn-neutral !bg-red-200 !text-gray-900 !border-none btn-glow"
+              style="border-radius: 9999px"
+              >Acheter</a
+            >
+          </li>
         </ul>
+        <button
+          type="button"
+          id="nav-toggle"
+          class="nav-toggle lg:hidden"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./blog/index.html">Blog</a></li>
+          <li><a href="./auteur.html">Auteur</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <a
+          href="https://www.amazon.fr/Jabari-Kaa-B-Ichikawa/dp/B0DVZ9MT1N/ref=tmm_pap_swatch_0"
+          target="_blank"
+          rel="noopener"
+          class="mobile-menu-cta"
+          >Acheter le livre</a
+        >
       </div>
     </nav>
 
     <div id="content" class="flex flex-col gap-4 px-6 py-8">
-      <header id="contact-header" class="text-center my-8">
+      <header id="contact-header" class="text-center my-8 reveal">
         <h1 class="text-4xl font-extrabold text-gray-800">Contactez l'Auteur</h1>
         <p class="text-xl mt-4 text-gray-600">Vous avez des questions, des commentaires ou des suggestions ? N'hésitez pas à me contacter via Instagram.</p>
       </header>
 
       <section id="contact-details" class="max-w-3xl mx-auto text-gray-800">
-        <p class="text-lg px-4 mb-6">
-          Si vous souhaitez échanger avec moi, partager vos impressions sur **Jabari**, ou poser des questions concernant mon travail, la meilleure manière de me contacter est via Instagram. 
+        <p class="text-lg px-4 mb-6 reveal" data-reveal-delay="0">
+          Si vous souhaitez échanger avec moi, partager vos impressions sur <strong>Jabari Kaa</strong>, ou poser des questions concernant mon travail, la meilleure manière de me contacter est via Instagram.
         </p>
-        <p class="text-lg px-4 mb-6">
-          Je serai ravi de lire vos retours, vos idées et de discuter avec vous de l'univers de Jabari et de mes futures créations. Les messages sur Instagram me permettent de répondre rapidement et de manière plus personnelle.
+        <p class="text-lg px-4 mb-6 reveal" data-reveal-delay="0.05">
+          Je serai ravi de lire vos retours, vos idées et de discuter avec vous de l'univers de Jabari Kaa et de mes futures créations, dont le tome 2 déjà en préparation. Les messages sur Instagram me permettent de répondre rapidement et de manière plus personnelle.
         </p>
 
-        <div class="text-center mt-8">
-          <a href="https://www.instagram.com/jabari_kaa/#" target="_blank" class="btn btn-neutral bg-red-200 w-[250px]" style="border-radius: 9999px;">Contactez-moi sur Instagram</a>
+        <div class="text-center mt-8 reveal" data-reveal-delay="0.1">
+          <a href="https://www.instagram.com/jabari_kaa/" target="_blank" rel="noopener" class="btn btn-neutral !bg-red-200 !text-gray-900 !border-none w-[250px] btn-glow" style="border-radius: 9999px">Contactez-moi sur Instagram</a>
         </div>
       </section>
-      <section id="achat" class="flex flex-row justify-left w-full mx-auto text-gray-800">
-        <a href="https://www.amazon.fr/Jabari-Kaa-B-Ichikawa/dp/B0DVZ9MT1N/ref=tmm_pap_swatch_0" target="_blank" class="btn btn-sm btn-neutral " style="border-radius: 9999px;">Acheter le premier tome</a>
+      <section id="achat" class="flex flex-row justify-center w-full mx-auto text-gray-800 reveal">
+        <a
+          href="https://www.amazon.fr/Jabari-Kaa-B-Ichikawa/dp/B0DVZ9MT1N/ref=tmm_pap_swatch_0"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-sm btn-neutral !bg-red-200 !text-gray-900 !border-none btn-glow"
+          style="border-radius: 9999px"
+          >Acheter le premier tome</a
+        >
       </section>
     </div>
 
     <footer class="bg-gray-900 text-white text-center py-4 mt-10">
-      <p>&copy; 2025 Jabari - Tous droits réservés.</p>
+      <p>&copy; 2026 Jabari Kaa - Tous droits réservés.</p>
     </footer>
 
+    <!-- Barre CTA flottante -->
+    <div id="sticky-cta" class="sticky-cta">
+      <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+        <p class="text-white font-league-spartan font-bold text-sm sm:text-base">Jabari Kaa — noté 5/5 sur Amazon</p>
+        <a
+          href="https://www.amazon.fr/Jabari-Kaa-B-Ichikawa/dp/B0DVZ9MT1N/ref=tmm_pap_swatch_0"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-sm btn-neutral !bg-red-200 !text-gray-900 !border-none btn-glow whitespace-nowrap"
+          style="border-radius: 9999px"
+          >Acheter le livre</a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="./js/site.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.7/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
